@@ -1,0 +1,326 @@
+# ============================================
+# .gitignore para Proyecto Django + Machine Learning
+# ============================================
+
+# ========== Python ==========
+# Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribución / empaquetado
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Traducción
+*.mo
+*.pot
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask
+instance/
+.webassets-cache
+
+# Scrapy
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# pdm
+.pdm.toml
+
+# PEP 582
+__pypackages__/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# ========== Django Específico ==========
+# Base de datos
+*.sqlite3
+db.sqlite3
+
+# Archivos estáticos recolectados
+/staticfiles/
+/static_root/
+/static/
+
+# Archivos de media
+/media/
+/mediafiles/
+
+# Configuración local
+local_settings.py
+.env
+.env.local
+.env.*.local
+
+# Migraciones (opcional - algunas personas las comitean)
+# */migrations/*.py
+# !*/migrations/__init__.py
+
+# ========== Machine Learning ==========
+# Modelos entrenados (.pkl, .joblib, .h5, etc.)
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.onnx
+*.pb
+
+# Datos (datasets)
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.json
+*.parquet
+
+# Excepciones: permitir archivos de ejemplo pequeños
+!**/example_data/*.csv
+!**/sample_data/*.csv
+
+# Carpetas de datos
+/data/
+/datasets/
+/raw_data/
+/processed_data/
+
+# Carpetas de modelos
+/ml_models/*.pkl
+/ml_models/*.joblib
+/models/*.pkl
+/models/*.joblib
+
+# Tensorboard logs
+/logs/
+/tb_logs/
+/tensorboard/
+
+# Weights & Biases
+wandb/
+
+# MLflow
+mlruns/
+
+# Checkpoints
+/checkpoints/
+*.ckpt
+
+# ========== IDEs ==========
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Spyder
+.spyderproject
+.spyproject
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ========== Sistema Operativo ==========
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ========== Node.js (si usas frontend) ==========
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# ========== Docker ==========
+*.log
+docker-compose.override.yml
+
+# ========== Otros ==========
+# Archivos de respaldo
+*.bak
+*.swp
+*.swo
+*~
+
+# Archivos temporales
+tmp/
+temp/
+*.tmp
+
+# Archivos comprimidos (opcional)
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# Configuraciones secretas
+secrets.json
+*.pem
+*.key
+.secrets/
+
+# ========== Permitir estos archivos importantes ==========
+# Requirements
+!requirements.txt
+!requirements-dev.txt
+!requirements-prod.txt
+
+# README y documentación
+!README.md
+!CONTRIBUTING.md
+!LICENSE
+
+# Configuración de ejemplo
+!.env.example
+!settings.example.py
+
+# GitHub Actions / CI/CD
+!.github/
+!.gitlab-ci.yml
+!Dockerfile
+!docker-compose.yml
+
+# Mantener estructura de carpetas vacías
+!.gitkeep

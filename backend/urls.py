@@ -19,7 +19,7 @@ Estructura de URLs:
   └── /api/statistics/      - Estadísticas del sistema
 
 Autor: Sistema de Predicción de Café ML
-Fecha: 2024
+Fecha: 2026
 """
 
 from django.contrib import admin

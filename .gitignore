@@ -311,7 +311,7 @@ secrets.json
 !requirements-prod.txt
 
 # README y documentación
-!README.md
+!docs/README1.md
 !CONTRIBUTING.md
 !LICENSE
 

@@ -2,6 +2,9 @@
 # .gitignore para Proyecto Django + Machine Learning
 # ============================================
 
+# ========== Documentación (excluir del repo) ==========
+docs/
+
 # ========== Python ==========
 # Bytecode
 __pycache__/
